@@ -59,6 +59,7 @@ where attribution_window = '1d_view'
   and total_ad_spend_eur > 50000
 order by blended_roas asc
 limit 10;
+```
 Result example: Client_17
 
 ---
