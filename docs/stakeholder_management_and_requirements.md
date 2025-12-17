@@ -174,8 +174,8 @@ However, the BL models provide foundational metrics (revenue, profit, internal c
 The data stack follows a structured transformation architecture:
 
 ### **IL → CL → OL → BL**  
-- **IL (Input Layer):** Raw input files and source structures  
-- **CL (Clean Layer):** Type-corrected, trimmed, standardized schemas  
+- **IL (Integration Layer):** Raw input files and source structures  
+- **CL (Cleansing Layer):** Type-corrected, trimmed, standardized schemas  
 - **OL (Operational Layer):** Business logic combining multiple sources (profitability, ad metrics, internal cost)  
 - **BL (Business Layer):** Final analytical models consumed by business stakeholders  
 
@@ -183,7 +183,7 @@ This layered approach ensures maintainability, clarity, and traceability across 
 
 ---
 
-### Phase 1 – Foundation (Staging / CL Layer)
+### Phase 1 – Foundation (IL / CL Layer)
 - Build cleaned models for all raw sources  
 - Normalize schemas & apply naming conventions  
 - Add dbt tests: not_null, unique, relationships  
